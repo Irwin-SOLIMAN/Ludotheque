@@ -2,7 +2,7 @@
   <ul>
     @for(page of pages; track $index) {
     <li>
-      <a href="">{{ page.name }}</a>
+      <a [routerLink]="[page.path]">{{ page.name }}</a>
     </li>
     }
   </ul>
